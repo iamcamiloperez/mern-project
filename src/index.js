@@ -2,8 +2,12 @@ const express = require('express') //Permite ejecutar un servidor
 const morgan = require('morgan') //Permite ver por consola peticiones que llegan del cliente
 const path = require('path') //Permite la navegación entre archivos estaticos
 
+//importa la conexión DB
+const { mongoose } = require('./database')
+
 //Servidor express
 const app = express();
+
 
 
 //Settings
